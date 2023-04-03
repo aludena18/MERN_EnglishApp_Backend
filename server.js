@@ -20,6 +20,10 @@ app.get("/", (req, res) => res.status(200).send("Hello TheWebDev"));
 app.get("/sync", (req, res) => {
   res.send(data);
 });
+app.get("/vcards", (req, res) => {
+  console.log("route: /vcards");
+  res.status(200).send("Hello from Server");
+});
 
 app.post("/search", async (req, res) => {
   try {
